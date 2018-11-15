@@ -16,13 +16,13 @@ body{
 
 }
 .gallery{
-    width: 640px;
-    height: 720px;
+    width: 630px;
     display: inline-flex;
     flex-flow: column nowrap;
-    padding: 10px;
+    align-items: center;
+    padding: 5px;
     box-sizing: border-box;
-    align-content: flex-start;
+    box-shadow: 1px 1px 5px black;
 }
 .main_pic{
     width: 620px;
@@ -31,6 +31,7 @@ body{
     background-size: cover;
     background-position: center;
     position: relative;
+    border-radius: 5px
 }
 .main_pic img {
     width: 100%;
@@ -63,10 +64,10 @@ body{
 .pictures img {
     width: 100%;
     height: 100%;
-    opacity: 1;
     border-radius: 3px;
-
+    opacity: 0.6;
 }
+
 .lines{
     width: 620px;
     display: inline-flex;
@@ -75,6 +76,7 @@ body{
     position: absolute;
     left: 0;
     bottom: 5px;
+    opacity: 0.8;
 }
 .line{
     background-color: #F8F8F0;
@@ -88,4 +90,28 @@ body{
     width: 30px;
     margin-right: 5px;
     border-radius: 3px;
+}
+.button{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #777777;
+    border-radius: 50%;
+    opacity: 0.4;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 30px;
+    text-align: center;
+}
+.button:hover{
+    color: #F8F8F0;
+}
+.left{
+    left: 5px;
+    top: 210px;
+}
+.right{
+    right: 5px;
+    top: 210px;
 }
